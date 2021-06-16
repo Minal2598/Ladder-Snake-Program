@@ -2,20 +2,20 @@ public class LadderSnake{
 public static void main(String[] args){
 	int count1 = 0;
 	int count = 0;
-    int position = 0;
-    int position1 = 0;
+        int position = 0;
+        int position1 = 0;
    while((position<=99)&&(position1<=99)) {
-	    System.out.println("position is " + position);
-	    int die=(int) (Math.random() * 10) % 6+1;
-	    int die1=(int) (Math.random() * 10) % 6+1;
-		position = (position + die);
-		position1 = (position1 + die);
-		count =(count + 1);
-		count1 =(count1 + 1);
-		System.out.println("die value is " + die);
-		System.out.println("die value is " + die1);
-	    int value=(int) (Math.random() * 10) % 3+1;
-	    int value1=(int) (Math.random() * 10) % 3+1;
+	System.out.println("position is " + position);
+        int die=(int) (Math.random() * 10) % 6+1;
+	int die1=(int) (Math.random() * 10) % 6+1;
+	position = (position + die);
+	position1 = (position1 + die);
+	count =(count + 1);
+	count1 =(count1 + 1);
+	System.out.println("die value is " + die);
+	System.out.println("die value is " + die1);
+	int value=(int) (Math.random() * 10) % 3+1;
+	int value1=(int) (Math.random() * 10) % 3+1;
 	
 	 switch(value) {
 	   case 1:

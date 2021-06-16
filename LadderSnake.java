@@ -1,20 +1,24 @@
 public class LadderSnake{
 public static void main(String[] args){
 	
-	int position = 0;
+	
+int position = 0;
+  while(position<=99){
 	System.out.println("position is " + position);
 	int die=(int) (Math.random() * 10) % 6+1;
-		System.out.println("dice value is " + die);
+	position =(position + die);
+	System.out.println("dice value is " + die);
 	int value=(int) (Math.random() * 10) % 3+1;
-	System.out.println("case number is " + value);
-	 switch(value) {
+	
+	   switch(value) {
 	   case 1:
-	   System.out.println( "No Play You are in the same position." );
+	   System.out.println( "No Play....You are in the same position" );
 	   break;
 	  
 	   case 2:
 	   position = (position + die);
-	   System.out.println( "your position after ladder is ::" + position );
+	  
+	   System.out.println( "your position after ladder is :" + position );
 	   break;
 	   
 	   case 3: 
@@ -23,8 +27,9 @@ public static void main(String[] args){
 	  if(position<0){
 		  position = 0;
 	  }
-		 System.out.println( "Your Position after snake is::" + position );
+		 System.out.println( "Your Position after snake is" + position );
 	   break;
 	   }
+	  }
 	}
 }

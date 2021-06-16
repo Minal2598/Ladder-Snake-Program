@@ -1,3 +1,5 @@
+
+
 public class LadderSnake{
 public static void main(String[] args){
 	
@@ -10,14 +12,17 @@ int position = 0;
 	System.out.println("dice value is " + die);
 	int value=(int) (Math.random() * 10) % 3+1;
 	
-	   switch(value) {
+	 switch(value) {
 	   case 1:
 	   System.out.println( "No Play....You are in the same position" );
 	   break;
 	  
 	   case 2:
 	   position = (position + die);
-	  
+	   if(position>100){
+		  position = (position - die);
+		  continue;
+	   }
 	   System.out.println( "your position after ladder is :" + position );
 	   break;
 	   
